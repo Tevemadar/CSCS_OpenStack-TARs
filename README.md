@@ -1,4 +1,4 @@
-#Multi-TAR uploader for CSCS/Pollux
+# Multi-TAR uploader for CSCS/Pollux
 
 This code is built on https://github.com/eth-cscs/openstack and has similar [dependencies](https://github.com/eth-cscs/openstack/tree/master/cli)
 
