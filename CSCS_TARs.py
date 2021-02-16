@@ -37,7 +37,7 @@ with open(str(int(time.time()))+".txt","w") as logfile:
     logfile.write(tar)
     logfile.write("\r\n")
     with open(tar,"rb") as tarfile:
-      req=requests.put("https://object.cscs.ch/v1/AUTH_08c08f9f119744cbbf77e216988da3eb/"+container+"/"+tar+"?extract-archive=tar",
+      req=requests.put("https://object.cscs.ch/v1/AUTH_08c08f9f119744cbbf77e216988da3eb/"+container+"/?extract-archive=tar",
                        data=tarfile,
                        headers={"X-Auth-Token":token})
     os.rename(tar,"done/"+tar)
